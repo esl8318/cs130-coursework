@@ -1,21 +1,46 @@
-/* You're welcome to change any of this! */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
-    font-family: Arial, sans-serif;
+    font-family: Jost, sans-serif;
 }
-header, section {
+section {
     padding: 20px;
 }
 p, li {
     line-height: 1.5em;
 }
 
+h2 {
+    color: beige;
+}
+h1 {
+    color: #16697A;
+}
+
+
+#header {
+    background-color: beige;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    line-height: 0.5em;
+}
 #inspiration {
-    background-color: #F0F0F0;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    background-color: #16697A;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#homework {
+    background-color: #FF7F50;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#tutorials {
+    background-color: #FFBA01;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
