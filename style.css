@@ -15,7 +15,7 @@ p, li {
 }
 
 h2 {
-    color: beige;
+    color: #fff7d3;
 }
 h1 {
     color: #16697A;
@@ -23,7 +23,7 @@ h1 {
 
 
 #header {
-    background-color: beige;
+    background-color: #fff7d3;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 50px;
