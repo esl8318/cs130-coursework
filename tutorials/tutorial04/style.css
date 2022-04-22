@@ -7,7 +7,7 @@ body {
 
 .container {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 0.5fr;
    grid-template-rows: 0.2fr 1fr 1fr;
    grid-template-areas: 
    "a . b b"
@@ -62,32 +62,6 @@ article {
    padding: 10px;
 }
 
-
-@media (max-width: 1024px) {
-   .container{
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 0.4fr 0.1fr 1.5fr 1fr 0.2fr;
-      grid-template-areas: 
-      "a . b b"
-      "f f f f"
-      "c c d d"
-      "e e e e"
-      "g g g g";
-   }
-}
-
-@media (max-width: 1024px) {
-   .container{
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 0.4fr 0.1fr 1.5fr 1fr 0.2fr;
-      grid-template-areas: 
-      "a . b b"
-      "f f f f"
-      "c c d d"
-      "e e e e"
-      "g g g g";
-   }
-}
 
 @media (max-width: 1024px) {
    .container{
