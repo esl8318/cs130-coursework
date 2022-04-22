@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    margin: 10px;
+    margin: 5px;
     font-family: Jost, sans-serif;
     height: 100%;
 }
@@ -35,12 +35,15 @@ h1 {
 }
 #inspiration {
     background-color: #16697A;
+    color: white;
 }
 #homework {
     background-color: #FF7F50;
+    color: white;
 }
 #tutorials {
     background-color: #FFBA01;
+    color:white;
 }
 
 .boxes {
