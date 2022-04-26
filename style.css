@@ -19,31 +19,40 @@ p, li {
 }
 
 h2 {
-    color: #ffffff;
+    color: #6800b8;
 }
 h1 {
-    color: #16697A;
+    color: white;
 }
 
 
 #header {
-    background-color: #fff7d3;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border-style: double;
+    border-color: #CEC2FF;
+    border-width: 15px;
+    background-color:#6a5acd;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 50px;
     line-height: 1.5em;
 }
 #inspiration {
-    background-color: #16697A;
-    color: white;
+    border-style: solid;
+    border-color: #6a5acd;
+    background-color: #CEC2FF;
+    color: #6a5acd;
 }
 #homework {
-    background-color: #FF7F50;
-    color: white;
+    border-style: solid;
+    border-color: #6a5acd;
+    background-color: #B3B3F1;
+    color: #6a5acd;
 }
 #tutorials {
-    background-color: #FFBA01;
-    color:white;
+    border-style: solid;
+    border-color: #6a5acd;
+    background-color: #DCB6D5;
+    color:#6a5acd;
 }
 
 .boxes {
@@ -52,7 +61,11 @@ h1 {
     justify-content: center;
     height: 100%;
 }
-
+.fa-laptop-file{
+    font-family: "Font Awesome 6 Free";
+    font-size: 20px;
+    color: black;
+}
 section {
     padding: 20px;
     flex-grow: 1;
