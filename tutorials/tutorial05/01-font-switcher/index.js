@@ -1,16 +1,21 @@
-let currentFont = 1.3
+var fontSize = 2.4;
 
 const makeBigger = () => {
    console.log('make bigger!');
-   console.log('i hate this');
-   currentFont += 0.2
-   setFont ();
-   // document.getElementsByClassName(".content").style.fontColor = 'red';
+   fontSize += 0.3;
+   changeFont();
 };
 
 const makeSmaller = () => {
-   alert('make smaller!');
+   console.log('make smaller!');
+   fontSize -= 0.3
+   changeFont();
 };
+
+const changeFont = () => {
+   document.querySelector("h1").style.fontSize = `${fontSize + 0.5}em`;
+   document.querySelector(".content").style.fontSize = `${fontSize}em`;
+}
 
 
 document.querySelector("#a1").addEventListener('click', makeBigger);
