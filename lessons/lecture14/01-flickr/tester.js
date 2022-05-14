@@ -1,18 +1,22 @@
 let results;
 const serverURL = 'https://www.apitutor.org/flickr/simple/';
 
-const getPhotos = () => {
+const showData = (tag) => {
     // this function pulls down data from a server
     // everytime it is invoked. Change the value of
     // the tag to get different data:
-    fetch(serverURL + '?tags=Evanston')
+    fetch(serverURL + '?tags=' + tag)
         .then(response => {
             return response.json()
         })
         .then(doSomethingWithTheData);
 };
 
+
+
 const doSomethingWithTheData = (data) => {
+    document.querySelector('#gallery').innerHTML = ""
+    console.log(data)
     // this function executes once the data has been 
     // pulled down from the server:
     results = data;
@@ -20,11 +24,10 @@ const doSomethingWithTheData = (data) => {
     console.log(results);
 
     for (const item of results) {
-        document.querySelector('#gallery').innerHTML +=
+        document.querySelector('#gallery').innerHTML += 
             `<img src="${item.img_url}" alt="${item.title}">`
-
     }
 };
 
 // invoke the function when the page initializes:
-getPhotos();
+showData('cats');

@@ -17,6 +17,7 @@
  * 
  * 
  */
+ let currentIndex=0; 
 
 const images = [
     'images/field1.jpg',
@@ -49,13 +50,13 @@ const handleThumbnailClick = ev => {
     console.log(element);
     const bgImage = element.style.backgroundImage;
     document.querySelector('.featured_image').style.backgroundImage = bgImage;
+    currentIndex = Number (elem.getAttribute('data-index'));
 };
 
 //Goals: 
 // 1. create a function that handles previous
 // 2. create a function that handles next 
 
-let currentIndex=0; 
 
 const previous = () => {
     if (currentIndex > 0) {
