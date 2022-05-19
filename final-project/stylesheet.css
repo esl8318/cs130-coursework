@@ -179,3 +179,13 @@ section > div {
     color: white;
     transform: rotateY(180deg);
   }
+
+  /* music cards */
+
+.music-card:hover,
+.music-card:focus {
+   color: #333;
+   background-color: #fff;
+   padding: 5px 20px;
+   transform: rotate(-10deg);
+}
