@@ -18,6 +18,8 @@ const search = (ev) => {
 
 const getTracks = (term) => {
     let url = `https://www.apitutor.org/spotify/simple/v1/search?type=track&q=${term}`
+    //this code fetches tracks based on a search term and prints them
+    //to the console. 
     fetch(url)
         .then((response) => response.json())
         .then ((data) => {
@@ -25,7 +27,7 @@ const getTracks = (term) => {
                 let firstFive = data.splice(0, 5)
                 console.log(firstFive[0]);
                 //convert to html
-                let html = firstFive.map(track2HTML);
+                let html = firstFive.map(track2HTML).join("");
                 //plug it bakc to the index.html file
                 document.querySelector('#tracks').innerHTML = html;
             } else {
@@ -41,7 +43,7 @@ const track2HTML = (track) => {
         <img src=${track.album.image_url}>
         <i class="fas play-track fa-play" aria-hidden="true"></i>
         <div class="label">
-            <h2>${track.album.name}</h2>
+            <h2>${track.name}</h2>
             <p>
                 ${track.artist.name}
             </p>
@@ -54,10 +56,27 @@ const getAlbums = (term) => {
 
     fetch(url)
         .then(response => response.json())
-        .then((data) => {
-            let albums = data[0];
+        .then((albums) => {
+            console.log (albums);
+            let html = albums.map(album2HTML).join("");
+            document.querySelector("#albums").innerHTML = html;
         })
 };
+
+const album2HTML = (album) => {
+    return `
+        <section class="album-card" id="${album.id}">
+            <div>
+                <img src="${album.image_url}">
+                <h2>${album.name}</h2>
+                <div class="footer">
+                    <a href="https://open.spotify.com/album/2lATw9ZAVp7ILQcOKPCPqp" target="_blank">
+                    view on spotify
+                    </a>
+                </div>
+            </div>
+        </section>`
+}
 
 const getArtist = (term) => {
     let url = `https://www.apitutor.org/spotify/simple/v1/search?type=artist&q=${term}`;
@@ -93,7 +112,7 @@ const artist2HTML = (artist) => {
     </section>`;
 };
 
-getArtist("ABBA");
+getArtist("");
 
 const handleTrackClick = (ev) => {
     const previewUrl = ev.currentTarget.getAttribute('data-preview-track');

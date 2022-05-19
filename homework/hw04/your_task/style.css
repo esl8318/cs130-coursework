@@ -39,7 +39,7 @@ aside {
 }
 header {
     position: fixed;
-    width: calc(100vw - 250px);
+    width: calc(100vw - 50px);
     left: 250px;
     background: #fff;
     border-bottom: dotted #999 1px;   
