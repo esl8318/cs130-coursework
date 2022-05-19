@@ -97,7 +97,7 @@ main {
     flex-wrap: wrap;
     font-size: 70%;
 }  */
-.artist-card {
+.book-card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,21 +109,28 @@ main {
     margin-left: 13%;
 };
 
-.artist-card > img {
+.book-card > img {
     justify-content: right;
     border-radius: 50%;
 }
 
-.artist-card img {
+.book-card img {
     width: 20%;
     border-radius: 50%;
 }
 
 section > div {
     border-radius: 15px;
-    background-color: green;
+    background-color: none;
     display: flex;
     flex-direction: row;
     padding: 20px;
     justify-content: center;
+}
+
+#featured-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 100%;
 }
