@@ -70,7 +70,8 @@ main {
 }
 
 #introimage {
-    width: 50%;
+    width: 45%;
+    border-radius: 50%;
 }
 
 .introtext {
@@ -214,11 +215,6 @@ section > div {
     border-radius: 30px;
     margin-top: 30px;
 };
-
-#BTI-album {
-    border-radius: 50%;
-}
-
 
 /* section > div {
     border-radius: 15px;
