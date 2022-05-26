@@ -49,6 +49,7 @@ nav {
     background: orange;
     margin: 10px;
     padding: 10px;
+    border-radius: 15px;
 }
 
 ul {
@@ -206,13 +207,18 @@ section > div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
     width: 35%;
     background-color: #249EA0;
     color: white;
     border-radius: 30px;
     margin-top: 30px;
 };
+
+#BTI-album {
+    border-radius: 50%;
+}
+
 
 /* section > div {
     border-radius: 15px;
