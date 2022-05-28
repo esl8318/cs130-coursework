@@ -247,69 +247,178 @@ section > div {
     transform: rotateY(180deg);
   }
 
-/* music cards */
-.music-page {
+/* rap cards */
+.rap-music-page {
     display: flex;
     flex-direction: row;
 }
-.music-card-info {
+.rap-music-card-info {
     display: flex;
     background-color:rgb(54, 169, 155);
     color: white;
     align-items: center;
     width: 95%;
 }
-.music-card-info img {
+.rap-music-card-info img {
     align-items: center;
     border: solid orange;
 }
 
-#music-content{
+#rap-music-content{
     /* width: 60%; */
     /* padding: 20px; */ */
     /* /* margin: 10px; */
 }
 
-.music-footer h2 {
+.rap-music-footer h2 {
     font-size: 65px;
     line-height: 60px;
 }
-/* reviewc card */
-.review-card {
+/* rap review card */
+.rap-review-card {
     display: flex;
     flex-direction: row;
     background-color: orange;
 }
 
-.review-card-info {
+.rap-review-card-info {
     display: flex;
     flex-direction: column;
 }
 
-/* music heading - rap */
+/* music heading - RAP */
 #heading-rap {
     display: flex;
     flex-direction: column;
     text-align: right;
-    color:rgb(54, 169, 155);
+    color: orange;
     background-color:none;
     margin-right: 40px;
     margin-left: 40px;
-    border-radius: 15px;
     /* margin-top: 10px; */
     padding-top: 25px;
 }
 #heading-rap h1 {
     font-size: 170px;
 }
-
 #heading-rap h2 {
     font-size: 20px;
     color: black;
 }
-
+/* music heading - JAZZ */
 #heading-jazz {
     display: flex;
     flex-direction: column;
     text-align: left;
+    background-color:none;
+    margin-right: 40px;
+    margin-left: 40px;
+    border-radius: 15px;
+    /* margin-top: 10px; */
+    padding-top: 10px;
 }
+#heading-jazz h1 {
+    font-size: 170px;
+    color: orange;
+}
+
+#heading-jazz h2{
+    font-size: 20px;
+    color: black;
+}
+
+/* jazz cards */
+.jazz-music-page {
+    display: flex;
+    flex-direction: row;
+}
+.jazz-music-card-info {
+    display: flex;
+    background-color:rgb(54, 169, 155);
+    color: white;
+    align-items: center;
+    width: 95%;
+}
+.jazz-music-card-info img {
+    align-items: center;
+    border: solid orange;
+}
+
+.jazz-music-footer h2 {
+    font-size: 65px;
+    line-height: 60px;
+}
+
+.jazz-music-footer h2 {
+    line-height: 70px;
+}
+/* jazz review card */
+.jazz-review-card {
+    display: flex;
+    flex-direction: row;
+    background-color: orange;
+}
+
+.jazz-review-card-info {
+    display: flex;
+    flex-direction: column;
+}
+/* music heading - alt */
+#heading-alt {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color:none;
+    margin-right: 40px;
+    margin-left: 40px;
+    border-radius: 15px;
+    /* margin-top: 10px; */
+    padding-top: 10px;
+}
+#heading-alt h1 {
+    font-size: 170px;
+    color: orange;
+}
+
+#heading-alt h2{
+    font-size: 20px;
+    color: black;
+}
+
+/* jazz cards */
+.alt-music-page {
+    display: flex;
+    flex-direction: row;
+}
+.alt-music-card-info {
+    display: flex;
+    background-color:rgb(54, 169, 155);
+    color: white;
+    align-items: center;
+    width: 95%;
+}
+.alt-music-card-info img {
+    align-items: center;
+    border: solid orange;
+}
+
+.alt-music-footer h2 {
+    font-size: 65px;
+    line-height: 60px;
+}
+
+.alt-music-footer h2 {
+    line-height: 70px;
+}
+/* rap review card */
+.alt-review-card {
+    display: flex;
+    flex-direction: row;
+    background-color: orange;
+}
+
+.alt-review-card-info {
+    display: flex;
+    flex-direction: column;
+}
+
