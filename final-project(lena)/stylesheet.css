@@ -18,7 +18,7 @@
 
 h1{
     font-family: 'gi-bold';
-    font-size: 100px;
+    font-size: 90px;
     line-height: 85px;
     /* color: #008083; */
 }
@@ -247,62 +247,23 @@ section > div {
     transform: rotateY(180deg);
   }
 
-/* music cards */
-.music-page {
+  /* music cards */
+.music-card {
     display: flex;
-    flex-direction: row;
-}
-.music-card-info {
-    display: flex;
-    background-color:rgb(54, 169, 155);
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    width: 35%;
+    background-color: #249EA0;
     color: white;
-    align-items: center;
-    width: 95%;
-}
-.music-card-info img {
-    align-items: center;
-    border: solid orange;
-}
+    border-radius: 30px;
+    margin-top: 30px;
+};
 
-#music-content{
-    /* width: 60%; */
-    /* padding: 20px; */ */
-    /* /* margin: 10px; */
-}
-
-.music-footer h2 {
-    font-size: 65px;
-    line-height: 60px;
-}
-/* reviewc card */
-.review-card {
-    display: flex;
-    flex-direction: row;
-    background-color: orange;
-}
-
-.review-card-info {
-    display: flex;
-    flex-direction: column;
-}
-
-/* music heading - rap */
-#heading-rap {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    color:rgb(54, 169, 155);
-    background-color:none;
-    margin-right: 40px;
-    margin-left: 40px;
+/* section > div {
     border-radius: 15px;
-}
-#heading-rap h1 {
-    font-size: 200px;
-}
+    display: flex;
+} */
 
-#heading-rap h2 {
-    font-size: 20px;
-    color: black;
-}
+
 

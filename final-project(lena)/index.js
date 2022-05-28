@@ -46,8 +46,8 @@ anime.timeline({loop: true})
   }).add({
     targets: '.ml4',
     opacity: 0,
-    duration: 100,
-    delay: 100
+    duration: 500,
+    delay: 500
   });
 
   var post= document.getElementById("post");
