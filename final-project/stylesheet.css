@@ -296,9 +296,11 @@ section > div {
     margin-right: 40px;
     margin-left: 40px;
     border-radius: 15px;
+    /* margin-top: 10px; */
+    padding-top: 25px;
 }
 #heading-rap h1 {
-    font-size: 200px;
+    font-size: 170px;
 }
 
 #heading-rap h2 {
@@ -306,3 +308,8 @@ section > div {
     color: black;
 }
 
+#heading-jazz {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
