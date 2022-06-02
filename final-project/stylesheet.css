@@ -107,6 +107,7 @@ p{
 }
 #unordered {
     font-family: gi-regular;
+    color:white;
 }
 
 /* #movies.html, #books.html, #movies.html {
@@ -331,7 +332,18 @@ section > div {
     flex-direction: row;
     /* width: 100px; */
 }
-
+.movie-cards button {
+    background-color: white;
+    font-size: 20px;
+    color:rgb(54, 169, 155);
+    font-family: gi-bold;
+    border-radius: 30px;
+    border: none;
+    padding: 3px;
+}
+.movie-cards button:hover {
+    background-color: orange;
+}
 /* tv heading */
 #tv-heading {
     display: flex;
@@ -354,13 +366,23 @@ section > div {
     font-size: 25px;
     color: black;
 }
-
 .tv-cards {
     display: flex;
     flex-direction: row;
     width: 100px;
 }
-
+.tv-cards button {
+    background-color: white;
+    font-size: 20px;
+    color:rgb(54, 169, 155);
+    font-family: gi-bold;
+    border-radius: 30px;
+    border: none;
+    padding: 3px;
+}
+.tv-cards button:hover {
+    background-color: orange;
+}
 /* rap cards */
 .rap-music-page {
     display: flex;
