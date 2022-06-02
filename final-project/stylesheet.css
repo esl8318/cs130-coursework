@@ -41,6 +41,32 @@ p{
 }
 /* homepage css */
 
+#logo {
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+}
+
 .ml4 {
   position: relative;
   font-weight: 900;
@@ -55,13 +81,32 @@ p{
   right: 0;
   opacity: 0; 
 }
-
-#comment-box, #post {
+.comment-section{
+    background-color:rgb(54, 169, 155);
+    border-radius: 30px;
+}
+#comment-box {
     border: none;
-    border-radius: 5px;
+    border-radius: 40px;
+    font-size: 20px;
+    background-color: white;
+    font-family: gi-regular;
+    padding: 15px;
+}
+#post {
+    border: none;
+    border-radius: 40px;
+    font-size: 15px;
+    background-color: white;
+    font-family: gi-regular;
+    padding: 10px;
 }
 #post:hover{
-    background-color: rgb(54, 169, 155);
+    background-color: orange;
+    color: white;
+}
+#unordered {
+    font-family: gi-regular;
 }
 
 /* #movies.html, #books.html, #movies.html {
@@ -90,13 +135,24 @@ nav {
     display: flex;
     justify-content: space-between;
     color: black;
-    /* background: orange; */
     margin: 10px;
     padding: 10px;
     border-radius: 15px;
 }
 
-ul {
+nav a, nav a:visited, nav a:link {
+    color: grey;
+}
+
+nav a:active {
+    color: teal;
+}
+
+nav a:hover {
+    color:orange;
+}
+
+ul.menu {
     display: flex;
     list-style: none;
     font-family: 'gi-regular';
@@ -109,75 +165,63 @@ main {
     display: flex;
 }
 
+.heroimage {
+    display: flex;
+    align-items: center;
+}
+
 .titletext {
     margin-top: 10%;
 }
 
 #introimage {
-    width: 40%;
+    width: 30%;
+    height: 30%;
     border-radius: 50%;
     border: solid 10px rgb(54, 169, 155);
+    justify-content: center;
+    margin: 30px;
 }
 .intro {
     display: flex;
     flex-direction: row;
     background-color: orange;
-    padding: 3%;
     border-radius: 30px;
     color: black;
 }
 .introtext {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
+.introtext h3{
+    font-size: 60px;
+}
 #logo {
     font-family: 'gi-bold';
 }
 
 /* book cards */
-
-/* section{
-    width: 100%;
-
-} */
-
-/* section {
-    border-radius: 35px;
-    background-color: #eaeaea;
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
+.book-card button {
+    background-color:rgb(54, 169, 155);
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: gi-bold;
+    border: none;
+    padding: 10px;
 }
 
-.artist-card {
-    justify-content: center;
-    height: 100%;
-    width: 30%;
-} 
-
-.artist-card img {
-    width: 100%;
-    border-radius: 20%;
-}
-
-#featured-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 70%;
-}  */
 .book-card {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10%;
-    width: 75%;
+    /* height: 10%;
+    width: 75%; */
     border-width: 0px;
     border-color: white;
     color: black;
-    margin-left: 13%;
+    margin-left: 5%;
 };
 
 .book-card > img {
@@ -187,7 +231,16 @@ main {
 
 .book-card img {
     width: 20%;
-    border-radius: 50%;
+    border-radius: 5%;
+}
+.card-footer h1{
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.card-footer h2{
+    font-size: 30px;
+    line-height: 60px;
 }
 
 section > div {
@@ -195,7 +248,7 @@ section > div {
     background-color: none;
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    padding: 10px;
     justify-content: center;
 }
 
@@ -211,7 +264,7 @@ section > div {
     width: 300px;
     height: 200px;
 
-    perspective: 1000px; Remove this if you don't want the 3D effect
+    perspective: 1000px; 
   }
   
   /* This container is needed to position the front and back side */
@@ -265,6 +318,7 @@ section > div {
 }
 #movie-heading h1 {
     font-size: 135px;
+    text-shadow: 5px 5px rgb(54, 169, 155);
 }
 
 #movie-heading h2 {
@@ -275,7 +329,7 @@ section > div {
 .movie-cards {
     display: flex;
     flex-direction: row;
-    width: 100px;
+    /* width: 100px; */
 }
 
 /* tv heading */
@@ -293,6 +347,7 @@ section > div {
 }
 #tv-heading h1 {
     font-size: 135px;
+    text-shadow: 5px 5px orange;
 }
 
 #tv-heading h2 {
@@ -344,13 +399,41 @@ section > div {
     display: flex;
     flex-direction: column;
 }
+.rating  {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 1px;
+}
+.rating button{
+    border-radius: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color:rgb(54, 169, 155);
+    color: white;
+    border: none;
+    font-family: gi-bold;
+    font-size: 25px;
+}
+button a, button a:visited, button a:link {
+    color:rgb(128, 194, 186)
+}
+button a:active {
+    color: teal;
+}
+button a:hover {
+    color: white;
+}
+
 
 /* music heading - RAP */
 #heading-rap {
     display: flex;
     flex-direction: column;
     text-align: right;
-    color: orange;
+    color: rgb(54, 169, 155);
     background-color:none;
     margin-right: 40px;
     margin-left: 40px;
@@ -359,7 +442,7 @@ section > div {
 }
 #heading-rap h1 {
     font-size: 170px;
-    text-shadow: 5px 5px rgb(54, 169, 155);
+    text-shadow: 5px 5px orange;
 
 }
 #heading-rap h2 {
@@ -439,8 +522,8 @@ section > div {
 }
 #heading-alt h1 {
     font-size: 170px;
-    color: orange;
-    text-shadow: 5px 5px rgb(54, 169, 155);
+    color: rgb(54, 169, 155);
+    text-shadow: 5px 5px orange;
 }
 
 #heading-alt h2{
@@ -524,7 +607,7 @@ section > div {
 }
 
 .pop-music-footer h2 {
-    font-size: 65px;
+    font-size: 37px;
     line-height: 60px;
 }
 
